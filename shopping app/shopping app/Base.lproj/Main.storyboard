@@ -8,64 +8,156 @@
     </dependencies>
     <scenes>
         <!--Home-->
-        <scene sceneID="hNz-n2-bh7">
+        <scene sceneID="2b7-J7-yty">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="shopping_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qda-wq-Q2p" userLabel="Home" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                        <viewControllerLayoutGuide type="top" id="Psg-4P-MSt"/>
+                        <viewControllerLayoutGuide type="bottom" id="qB0-1M-UvC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                    <view key="view" contentMode="scaleToFill" id="qSc-aZ-gPb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LkQ-eW-Wj6">
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwC-Ax-pOX">
-                                <state key="normal" title="Baymax Shop">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BAa-mv-gUq"/>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YwA-6H-kCK">
-                                <frame key="frameInset" minX="16" minY="148" width="100" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="1.豬五花肉" translatesAutoresizingMaskIntoConstraints="NO" id="KRI-m3-SNZ">
+                                <frame key="frameInset" minX="14" minY="75" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4.沙朗牛" translatesAutoresizingMaskIntoConstraints="NO" id="NyU-AY-uVX">
+                                <frame key="frameInset" minX="15" minY="203" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="5.雞蛋" translatesAutoresizingMaskIntoConstraints="NO" id="Ehm-Hb-opD">
+                                <frame key="frameInset" minX="136" minY="203" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="6.雞胸肉" translatesAutoresizingMaskIntoConstraints="NO" id="Tgp-lJ-exn">
+                                <frame key="frameInset" minX="258" minY="203" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Ib2-Zp-qdk"/>
-                                    <constraint firstAttribute="height" constant="100" id="tFa-Vn-Z18"/>
+                                    <constraint firstAttribute="width" constant="100" id="hwY-xG-PBw"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qq6-bL-Ldp">
-                                <frame key="frameInset" minX="116" minY="148" width="243" height="100"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="2.豬肉香腸" translatesAutoresizingMaskIntoConstraints="NO" id="ssJ-Nx-5bD">
+                                <frame key="frameInset" minX="135" minY="75" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fMN-Fc-4eb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="3.豬肋排" translatesAutoresizingMaskIntoConstraints="NO" id="N6X-lQ-CQX">
+                                <frame key="frameInset" minX="257" minY="75" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="GVG-yF-8R6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQF-Bt-b8S">
+                                <frame key="frameInset" minX="33" minY="175" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="豬五花肉">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trw-54-Yr6">
+                                <frame key="frameInset" minX="42" minY="303" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="沙朗牛">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cv-qP-Pes">
+                                <frame key="frameInset" minX="42" minY="428" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="雞腿肉">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Me-RV-n7r">
+                                <frame key="frameInset" minX="172" minY="428" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="青蔥">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEZ-nj-kfq">
+                                <frame key="frameInset" minX="287" minY="428" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="高麗菜">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Jc-gt-gle">
+                                <frame key="frameInset" minX="170" minY="564" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="蒜頭">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thA-gq-dby">
+                                <frame key="frameInset" minX="171" minY="303" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="雞蛋">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaA-e0-1M8">
+                                <frame key="frameInset" minX="286" minY="303" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="雞胸肉">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSr-xG-PK8">
+                                <frame key="frameInset" minX="156" minY="175" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="豬肉香腸">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zm-yc-15I">
+                                <frame key="frameInset" minX="285" minY="175" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="豬肋排">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="7.雞腿肉" translatesAutoresizingMaskIntoConstraints="NO" id="7cz-lf-U4A">
+                                <frame key="frameInset" minX="15" minY="333" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="8.青蔥" translatesAutoresizingMaskIntoConstraints="NO" id="Y6m-ky-jXR">
+                                <frame key="frameInset" minX="137" minY="333" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="9.高麗菜" translatesAutoresizingMaskIntoConstraints="NO" id="b7q-DC-rO8">
+                                <frame key="frameInset" minX="258" minY="333" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="10.蒜頭" translatesAutoresizingMaskIntoConstraints="NO" id="95P-0R-KiI">
+                                <frame key="frameInset" minX="137" minY="466" width="100" height="100"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="qq6-bL-Ldp" secondAttribute="trailing" id="088-eu-NdL"/>
-                            <constraint firstItem="BAa-mv-gUq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="3WK-yl-fX0"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="BAa-mv-gUq" secondAttribute="bottom" constant="108" id="4GR-9R-hLq"/>
-                            <constraint firstItem="YwA-6H-kCK" firstAttribute="width" secondItem="qq6-bL-Ldp" secondAttribute="width" id="AVP-5b-l41"/>
-                            <constraint firstItem="YwA-6H-kCK" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="148" id="L8h-Rd-OHn"/>
-                            <constraint firstItem="YwA-6H-kCK" firstAttribute="top" secondItem="LkQ-eW-Wj6" secondAttribute="bottom" constant="38" id="UCi-BE-K2S"/>
-                            <constraint firstItem="BAa-mv-gUq" firstAttribute="leading" secondItem="LkQ-eW-Wj6" secondAttribute="leading" id="Ybf-dd-sOT"/>
-                            <constraint firstItem="YwA-6H-kCK" firstAttribute="top" secondItem="qq6-bL-Ldp" secondAttribute="top" id="YwY-7B-NSD"/>
-                            <constraint firstItem="YwA-6H-kCK" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="a9p-fD-HiN"/>
-                            <constraint firstItem="LkQ-eW-Wj6" firstAttribute="top" secondItem="kwC-Ax-pOX" secondAttribute="bottom" constant="8" id="ebr-WX-3tO"/>
-                            <constraint firstItem="YwA-6H-kCK" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="fMm-nn-Fs2"/>
-                            <constraint firstItem="qq6-bL-Ldp" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="fsL-s5-Vs0"/>
-                            <constraint firstItem="BAa-mv-gUq" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="360" id="jSA-i5-Ird"/>
-                            <constraint firstAttribute="trailing" secondItem="LkQ-eW-Wj6" secondAttribute="trailing" id="kYD-qG-Sbq"/>
-                            <constraint firstItem="qq6-bL-Ldp" firstAttribute="leading" secondItem="YwA-6H-kCK" secondAttribute="trailing" id="pJL-bl-upd"/>
-                            <constraint firstItem="YwA-6H-kCK" firstAttribute="bottom" secondItem="qq6-bL-Ldp" secondAttribute="bottom" id="spL-1e-YSW"/>
-                            <constraint firstAttribute="trailing" secondItem="BAa-mv-gUq" secondAttribute="trailing" constant="201" id="wFa-xo-h8g"/>
-                            <constraint firstItem="LkQ-eW-Wj6" firstAttribute="centerX" secondItem="kwC-Ax-pOX" secondAttribute="centerX" id="wZX-8A-cjC"/>
+                            <constraint firstItem="ssJ-Nx-5bD" firstAttribute="leading" secondItem="KRI-m3-SNZ" secondAttribute="trailing" constant="74" id="0Al-Ax-f2c"/>
+                            <constraint firstItem="Tgp-lJ-exn" firstAttribute="leading" secondItem="Ehm-Hb-opD" secondAttribute="trailing" constant="22" id="0u5-MJ-yIi"/>
+                            <constraint firstItem="Y6m-ky-jXR" firstAttribute="leading" secondItem="7cz-lf-U4A" secondAttribute="trailing" constant="22" id="CfX-7Y-gxT"/>
+                            <constraint firstItem="N6X-lQ-CQX" firstAttribute="top" secondItem="ssJ-Nx-5bD" secondAttribute="top" id="FTC-Xj-jpf"/>
+                            <constraint firstItem="b7q-DC-rO8" firstAttribute="top" secondItem="Tgp-lJ-exn" secondAttribute="bottom" constant="30" id="Gdo-tA-Gy5"/>
+                            <constraint firstItem="95P-0R-KiI" firstAttribute="top" secondItem="Y6m-ky-jXR" secondAttribute="bottom" constant="21" id="L0L-wn-qOo"/>
+                            <constraint firstItem="b7q-DC-rO8" firstAttribute="bottom" secondItem="Y6m-ky-jXR" secondAttribute="bottom" id="NjR-Jw-sfJ"/>
+                            <constraint firstItem="Tgp-lJ-exn" firstAttribute="leading" secondItem="b7q-DC-rO8" secondAttribute="leading" id="OUs-Qd-5jl"/>
+                            <constraint firstItem="ssJ-Nx-5bD" firstAttribute="bottom" secondItem="KRI-m3-SNZ" secondAttribute="bottom" id="Q4C-Jf-Moh"/>
+                            <constraint firstItem="N6X-lQ-CQX" firstAttribute="bottom" secondItem="ssJ-Nx-5bD" secondAttribute="bottom" id="RYQ-7p-3rh"/>
+                            <constraint firstItem="Y6m-ky-jXR" firstAttribute="leading" secondItem="95P-0R-KiI" secondAttribute="leading" id="X9I-64-e4Q"/>
+                            <constraint firstItem="Y6m-ky-jXR" firstAttribute="trailing" secondItem="95P-0R-KiI" secondAttribute="trailing" id="Yll-AQ-28O"/>
+                            <constraint firstItem="Tgp-lJ-exn" firstAttribute="trailing" secondItem="b7q-DC-rO8" secondAttribute="trailing" id="Z8z-Ht-lou"/>
+                            <constraint firstItem="N6X-lQ-CQX" firstAttribute="leading" secondItem="ssJ-Nx-5bD" secondAttribute="trailing" constant="22" id="haR-S1-dBC"/>
+                            <constraint firstItem="b7q-DC-rO8" firstAttribute="leading" secondItem="Y6m-ky-jXR" secondAttribute="trailing" constant="21" id="hgu-ea-AIX"/>
+                            <constraint firstItem="KRI-m3-SNZ" firstAttribute="width" secondItem="ssJ-Nx-5bD" secondAttribute="width" id="jHT-ly-m7G"/>
+                            <constraint firstItem="b7q-DC-rO8" firstAttribute="top" secondItem="Y6m-ky-jXR" secondAttribute="top" id="jbh-31-vnc"/>
+                            <constraint firstItem="ssJ-Nx-5bD" firstAttribute="top" secondItem="KRI-m3-SNZ" secondAttribute="top" id="kkM-7A-mJR"/>
+                            <constraint firstItem="b7q-DC-rO8" firstAttribute="bottom" secondItem="7cz-lf-U4A" secondAttribute="bottom" id="s17-ur-QtC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="Home icon" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="Home icon" id="sfC-Sb-Znp"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQz-9j-bRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
+            <point key="canvasLocation" x="750" y="-322"/>
         </scene>
         <!--Item-->
         <scene sceneID="wg7-f3-ORb">
@@ -79,7 +171,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixc-mZ-0C0">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixc-mZ-0C0">
+                                <frame key="frameInset" minY="588" width="375" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -98,7 +191,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HmJ-rz-SaI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HmJ-rz-SaI">
+                                <frame key="frameInset" minX="49" minY="440" height="121"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -132,7 +226,6 @@
                             <constraint firstAttribute="bottom" secondItem="VGi-c9-KqC" secondAttribute="bottom" constant="235" id="fVH-Fy-Sgw"/>
                             <constraint firstItem="OEH-cZ-vc8" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="92" id="gqh-3f-AKD"/>
                             <constraint firstItem="IOi-JV-59L" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="28" id="kaC-vD-rdK"/>
-                            <constraint firstItem="ixc-mZ-0C0" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="mZf-3E-JH4"/>
                             <constraint firstItem="HmJ-rz-SaI" firstAttribute="top" secondItem="VGi-c9-KqC" secondAttribute="bottom" constant="8" symbolic="YES" id="pPB-0a-JhD"/>
                         </constraints>
                     </view>
@@ -175,7 +268,7 @@
             </objects>
             <point key="canvasLocation" x="1452" y="-321.58920539730138"/>
         </scene>
-        <!--More-->
+        <!--Account-->
         <scene sceneID="7ZK-Pf-gce">
             <objects>
                 <viewController id="3lV-DB-qGu" sceneMemberID="viewController">
@@ -237,7 +330,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="More" image="More icon" id="WCG-RU-ywZ"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="Account-1" id="WCG-RU-ywZ"/>
                     <navigationItem key="navigationItem" id="yF7-cw-dqN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xHT-Ab-XTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -323,7 +416,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="Qda-wq-Q2p" kind="relationship" relationship="viewControllers" id="PvU-RI-2Ff"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="LBp-Md-LcN" kind="relationship" relationship="viewControllers" id="k9Q-Kj-6qc"/>
                         <segue destination="3lV-DB-qGu" kind="relationship" relationship="viewControllers" id="ANc-6G-wvj"/>
@@ -335,12 +428,22 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1.豬五花肉" width="1000" height="1000"/>
+        <image name="10.蒜頭" width="640" height="457"/>
+        <image name="2.豬肉香腸" width="551" height="404"/>
+        <image name="3.豬肋排" width="550" height="367"/>
+        <image name="4.沙朗牛" width="350" height="350"/>
+        <image name="5.雞蛋" width="400" height="267"/>
+        <image name="6.雞胸肉" width="350" height="350"/>
+        <image name="7.雞腿肉" width="300" height="300"/>
+        <image name="8.青蔥" width="640" height="410"/>
+        <image name="9.高麗菜" width="600" height="600"/>
         <image name="Account" width="200" height="200"/>
+        <image name="Account-1" width="32" height="32"/>
         <image name="Cart" width="32" height="32"/>
         <image name="Email" width="40" height="28"/>
         <image name="Home icon" width="32" height="32"/>
         <image name="Image" width="750" height="667"/>
-        <image name="More icon" width="32" height="32"/>
         <image name="Profile" width="26" height="37"/>
         <image name="item" width="32" height="32"/>
         <image name="password" width="26" height="40"/>
